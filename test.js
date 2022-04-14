@@ -38,11 +38,20 @@ const fs = require("fs");
 //     console.log("file deleted!!");
 //   });
 // }
-const readStream = fs.createReadStream("./docs/data.html", {
-  encoding: "utf-8",
+// const readStream = fs.createReadStream("./docs/data.html", {
+//   encoding: "utf-8",
+// });
+// readStream.on("data", (chunk) => {
+//   console.log("\n---NEW CHUNK-----\n");
+//   console.log(chunk);
+// });
+
+const http = require("http");
+const server = http.createServer((req, res) => {
+  console.log(req.url);
+  console.log(req.method);
 });
-readStream.on("data", (chunk) => {
-  console.log("\n---NEW CHUNK-----\n");
-  console.log(chunk);
+server.listen(3001, "localhost", () => {
+  console.log(`SERVER IS RUNNING ON PORT ${3000}`);
 });
 console.log("end");

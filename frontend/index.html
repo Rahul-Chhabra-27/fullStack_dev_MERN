@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Oxygen", sans-serif;
+        font-family: "Oxygen Mono", monospace;
+      }
+      header {
+        background-color: darkgoldenrod;
+      }
+      header .main {
+        width: 80%;
+        margin: 0 auto;
+        padding: 16px 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      header .main .part1 {
+        color: #fff;
+      }
+      ul {
+        list-style: none;
+      }
+      span {
+        color: black;
+      }
+      .part1 {
+        text-align: center;
+        margin: 10px 0;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 16px 20px;
+        color: #fff;
+        font-weight: bolder;
+      }
+      a:hover {
+        background-color: pink;
+        color: blue;
+      }
+      header .main .part2 nav ul {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="part1">
+          <h2>My<span>Webpage</span></h2>
+        </div>
+        <div class="part2">
+          <nav>
+            <ul>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Content</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
